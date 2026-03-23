@@ -1,0 +1,31 @@
+{
+  "name": "codeur-bot",
+  "version": "1.0.0",
+  "description": "Bot auto-proposition pour codeur.com",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "dry-run": "cross-env DRY_RUN=true tsx src/index.ts",
+    "test-ai": "tsx src/test-ai.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "dotenv": "^16.4.0",
+    "node-cron": "^3.0.0",
+    "openai": "^4.0.0",
+    "puppeteer": "^23.0.0",
+    "puppeteer-extra": "^3.3.0",
+    "puppeteer-extra-plugin-stealth": "^2.11.0",
+    "winston": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
